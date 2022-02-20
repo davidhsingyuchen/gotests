@@ -32,9 +32,6 @@ jobs:
       with:
         path: ${{ env.GOPATH }}/src/github.com/cweill/gotests
 
-    - name: Get Dependencies (github.com/golang.org/x/tools/imports)
-      run: go get -v ./...
-
     - name: Test
       run: |
         go test -v ./...
